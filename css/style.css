@@ -6,9 +6,13 @@
 body{
     color: gray;
 }
-h2 {
+h2 , h3{
     color: white;
     font-weight: bold;
+    margin: 2% 0;
+
+}
+h2 {
 }
 /* macroblocco superiore */
 #wrapper {
@@ -103,9 +107,10 @@ hr{
     /* height: 100%; */
     width: calc(100% - 250px);
     overflow: auto;
+    background-color: rgba(20,25,34,255);
     /* DEBUG */
-    background-color: limegreen;
-    border: 1px dashed black;
+    /* background-color: limegreen;
+    border: 1px dashed black; */
 }
 /* intestazione sticky */
 .upgrade {
@@ -158,8 +163,8 @@ hr{
     margin: 0 auto;
     /* DEBUG */
     /* height: 2100px; */
-    background-color: rgb(59, 159, 9);
-    border: 1px dashed black;
+    /* background-color: rgb(59, 159, 9);
+    border: 1px dashed black; */
 }
  /* regole generali sezioni playlist */
 .playlist {
@@ -169,8 +174,8 @@ hr{
      margin: 10px 0;
 
      /* height: 500px; */
-     background-color: rgb(102, 220, 198);
-     border: 1px dashed black;
+     /* background-color: rgb(102, 220, 198);
+     border: 1px dashed black; */
 }
 .recently {
     /* justify-content: space-between; */
@@ -195,9 +200,9 @@ hr{
 .playlist div {
     width: 15%;
     /* DEBUG */
-    background-color: yellow;
+    /* background-color: yellow;
     border: 1px dashed black;
-    height: 360px;
+    height: 360px; */
     margin-right: 1%;
 
    
