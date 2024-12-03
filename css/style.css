@@ -6,6 +6,10 @@
 body{
     color: gray;
 }
+h2 {
+    color: white;
+    font-weight: bold;
+}
 /* macroblocco superiore */
 #wrapper {
     height: calc(100vh - 90px);
@@ -39,6 +43,7 @@ nav div {
 .icone-nav{
     max-width: 30px;
     margin: 1px 20px;
+    vertical-align: middle;
 }
 nav ul {
     list-style: none;
@@ -110,24 +115,50 @@ hr{
     z-index: 400;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.upgrade div{
+    margin-top: 30px;
+    margin-right: 15px;
+   
+}
+.upgrade span {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 9999px;
+    border: 3px solid white;
+    padding: 8px 14px;
+    font-weight: bold;
+    color: white;
+    
+    /* background-size: 100%;
+    padding: 2px auto; */
+    
+  
+    
+    
 }
 /* macrosezione overflow */
 
 /* selezioni */
 #selezioni {
-    width: 55%;
+    width: 90%;
     margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
     /* DEBUG */
-    background-color: rgb(218, 108, 12);
-    border: 1px dashed black;
+    background-color: rgb(14, 11, 7);
+    border: 1px dashed rgb(243, 240, 240);
 }
+
 /* macroblocco con playlist */
 .playlist-container {
     width: 90%;
     margin: 0 auto;
     /* DEBUG */
     height: 2100px;
-    background-color: lightcyan;
+    background-color: rgb(59, 159, 9);
     border: 1px dashed black;
 }
  /* regole generali sezioni playlist */
@@ -138,12 +169,27 @@ hr{
      margin: 10px 0;
 
      height: 500px;
-     background-color: rgb(179, 52, 145);
+     background-color: rgb(102, 220, 198);
      border: 1px dashed black;
 }
 .recently {
     justify-content: space-between;
 }
+.playlist img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.undertitle{
+    font-size: 15px;
+}
+.playlist section{
+    text-align: center;
+}
+.popolari div {
+    /* border-radius: 9999px; */
+}
+
 .doe div,.popolari div{
     margin-right: 2%;
 }
@@ -153,7 +199,7 @@ hr{
     /* DEBUG */
     background-color: yellow;
     border: 1px dashed black;
-    height: 130px;
+    height: 360px;
    
 }
 
@@ -180,8 +226,12 @@ hr{
 
 @media screen and (max-width:878px) {
     
-    #selezioni{
-        width: 83%;
+    #selezioni {
+        
+        margin: 10px auto;
+        flex-wrap: wrap;
+        gap: 2%;
+        
     }
     .playlist div {
         background-color: red;
@@ -207,4 +257,7 @@ hr{
      #wrapper main {
         height: 100%;
          width: calc(100% - 50px);}
+      #selezioni {
+         gap: 4%;
+        }
 }
