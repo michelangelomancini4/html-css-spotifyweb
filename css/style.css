@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* macroblocco superiore */
+#wrapper {
+    height: calc(100vh - 100px);
+    display: flex;
+   
+  }
+/* blocco navigazione sinistra */
+#wrapper nav {
+    width: 230px;
+    height: 100%;
+    
+    /* DEBUG */
+    background-color: rgb(194, 243, 20);
+    border: 1px dashed black;
+}
+
+/* macrosezione destra*/
+#wrapper main {
+    height: 100%;
+    width: calc(100% - 230px);
+    overflow: auto;
+    /* DEBUG */
+    background-color: limegreen;
+    border: 1px dashed black;
+}
+
+/* player/controller */
+
+#player {
+    height: 100px;
+    background-color: rgb(227, 35, 35);
+    border: 1px dashed black;
+}
