@@ -5,13 +5,13 @@
 }
 /* macroblocco superiore */
 #wrapper {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
     display: flex;
    
   }
 /* blocco navigazione sinistra */
 #wrapper nav {
-    width: 230px;
+    width: 250px;
     height: 100%;
     
     /* DEBUG */
@@ -22,17 +22,46 @@
 /* macrosezione destra*/
 #wrapper main {
     height: 100%;
-    width: calc(100% - 230px);
+    width: calc(100% - 250px);
     overflow: auto;
     /* DEBUG */
     background-color: limegreen;
     border: 1px dashed black;
 }
+/* intestazione sticky */
+.upgrade {
+    height: 80px; 
+    background-color: rgba(0, 0, 0, 0.6);
+    position: sticky;
+    z-index: 400;
+    top: 0;
+    right: 0;
+}
+/* macrosezione overflow */
+
+/* selezioni */
+#selezioni {
+    width: 55%;
+    margin: 10px auto;
+    /* DEBUG */
+    background-color: rgb(218, 108, 12);
+    border: 1px dashed black;
+}
+/* macroblocco ocn playlist */
+.playlist-container {
+    width: 90%;
+    margin: 0 auto;
+    /* DEBUG */
+    height: 800px;
+    background-color: lightcyan;
+    border: 1px dashed black;
+}
+
 
 /* player/controller */
 
 #player {
-    height: 100px;
+    height: 90px;
     background-color: rgb(227, 35, 35);
     border: 1px dashed black;
 }
