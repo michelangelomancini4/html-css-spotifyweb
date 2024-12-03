@@ -9,7 +9,7 @@
     display: flex;
    
   }
-/* blocco navigazione sinistra */
+/* colonna navigazione sinistra */
 #wrapper nav {
     width: 250px;
     height: 100%;
@@ -18,7 +18,13 @@
     background-color: rgb(194, 243, 20);
     border: 1px dashed black;
 }
-
+/* nav blocco superiore */
+nav div {
+ 
+    /* DEBUG */
+    background-color: rgb(47, 51, 164);
+    border: 1px dashed black;
+}
 /* macrosezione destra*/
 #wrapper main {
     height: 100%;
@@ -47,21 +53,90 @@
     background-color: rgb(218, 108, 12);
     border: 1px dashed black;
 }
-/* macroblocco ocn playlist */
+/* macroblocco con playlist */
 .playlist-container {
     width: 90%;
     margin: 0 auto;
     /* DEBUG */
-    height: 800px;
+    height: 2100px;
     background-color: lightcyan;
     border: 1px dashed black;
 }
+ /* regole generali sezioni playlist */
+.playlist {
+    display: flex;
+    flex-wrap: wrap;
+        /* DEBUG */
+     margin: 10px 0;
 
+     height: 500px;
+     background-color: rgb(179, 52, 145);
+     border: 1px dashed black;
+}
+.recently {
+    justify-content: space-between;
+}
+.doe div,.popolari div{
+    margin-right: 2%;
+}
+/* regole generali riquadri playlist */
+.playlist div {
+    width: 15%;
+    /* DEBUG */
+    background-color: yellow;
+    border: 1px dashed black;
+    height: 130px;
+   
+}
 
 /* player/controller */
 
 #player {
     height: 90px;
+    display: flex;
+    justify-content: space-between;
+    /* DEBUG */
     background-color: rgb(227, 35, 35);
     border: 1px dashed black;
+}
+#player div {
+    width: 16%;
+  /* DEBUG */
+  background-color: rgb(17, 104, 204);
+    border: 1px dashed black;
+}
+.tastieraplayer {
+   flex-basis: 38%;
+}
+/* regole modalità md (878px) */
+
+@media screen and (max-width:878px) {
+    
+    #selezioni{
+        width: 83%;
+    }
+    .playlist div {
+        background-color: red;
+        width: 24%;
+    }
+}
+/* regole modalità s (639) */
+
+@media screen and (max-width:639px) {
+   
+    .playlist div {
+        background-color: rgb(66, 224, 18);
+        width: 47%;
+    }
+}
+
+/* regole modalità xs (552) */
+
+@media screen and (max-width:552px){
+
+    #wrapper nav {
+        width: 50px;}
+     #wrapper main {
+        height: 100%;
+         width: calc(100% - 50px);}
 }
