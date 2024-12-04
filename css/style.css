@@ -5,6 +5,8 @@
 }
 body{
     color: gray;
+    font-family: sans-serif;
+
 }
 h2 , h3 , h4{
     color: white;
@@ -16,18 +18,16 @@ h2 {
 }
 /* macroblocco superiore */
 #wrapper {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 110px);
     display: flex;
    
   }
 /* colonna navigazione sinistra */
+/* blocco superiore */
 #wrapper nav {
     width: 250px;
     height: 100%;
     background-color: black;
-    /* DEBUG */
-    /* background-color: rgb(194, 243, 20);
-    border: 1px dashed black; */
 }
 
  nav {
@@ -35,61 +35,53 @@ h2 {
     flex-direction: column;
    
  }
-nav div {
-    /* DEBUG */
-    /* background-color: rgb(194, 215, 8);
-    border: 1px dashed black; */
-}
+
+.nav-up li:active {
+    color: rgb(255, 255, 255);
+    border-left: 3px solid greenyellow;
+  }
+
 #logo{
     max-width: 80%;
     margin: 5% 2%;
 }
-.icone-nav{
-    max-width: 30px;
-    margin: 1px 20px;
-    vertical-align: middle;
+.xs-appear {
+    display: none;
 }
 nav ul {
     list-style: none;
     margin-top: 6%;
     line-height: 30px;
 }
-
-nav section{
-    margin-left: 6%;
-    margin-bottom: 2%;
-}
-
-hr{
-    width: 85%;
-    margin: 3% auto;
-}
-#downloadimg {
+.icone-nav{
     max-width: 30px;
-    margin: -6px 20px;
+    margin: 1px 20px;
+    vertical-align: middle;
 }
-#downloadimg {
-    max-width: 30px;
-    margin: -6px 20px;
-}
-#profileimg {
-    
-        max-width: 30px;
-        margin: 1px 20px;
-        background-color: gray;  
-        border-radius: 50%;  
-}
+
+
 
 /* nav blocco inferiore */
+/* regole generali */
 .nav-down{
     /* min-height: calc(100% - 145px); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     flex-grow: 1;
-
 }
+
+
+nav section{
+    margin-left: 6%;
+    margin-bottom: 4%;
+}
+
+hr{
+    width: 85%;
+    margin: 5% auto;
+}
+
 .nav-down ul {
     margin-left: 7%;
 }
@@ -101,16 +93,30 @@ hr{
     font-size: 35px;
     margin-right: 2px;
 }
+/* regole footer del nav */
+.nav-down section{
+ margin-left: 0;
+}
+#downloadimg {
+    max-width: 30px;
+    margin: -6px 20px;
+}
+#profileimg {
+        max-width: 30px;
+        margin: -4px 20px;
+        background-color: gray;  
+        border-radius: 50%;  
+}
+.john {
+    color: white;
+}
+
 
 /* macrosezione destra*/
 #wrapper main {
-    /* height: 100%; */
     width: calc(100% - 250px);
     overflow: auto;
     background-color: rgba(20,25,34,255);
-    /* DEBUG */
-    /* background-color: limegreen;
-    border: 1px dashed black; */
 }
 /* intestazione sticky */
 .upgrade {
@@ -129,19 +135,12 @@ hr{
    
 }
 .upgrade span {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0);
     border-radius: 9999px;
     border: 3px solid white;
-    padding: 8px 14px;
-    font-weight: bold;
+    padding: 10px 16px;
+    font-size: 14px;
     color: white;
-    
-    /* background-size: 100%;
-    padding: 2px auto; */
-    
-  
-    
-    
 }
 /* macrosezione overflow */
 
@@ -152,19 +151,16 @@ hr{
     display: flex;
     justify-content: center;
     gap: 3%;
-    /* DEBUG */
-    background-color: rgb(14, 11, 7);
-    border: 1px dashed rgb(243, 240, 240);
 }
+#selezioni span:active {
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid greenyellow;
+  }
 
 /* macroblocco con playlist */
 .playlist-container {
     width: 90%;
     margin: 0 auto;
-    /* DEBUG */
-    /* height: 2100px; */
-    /* background-color: rgb(59, 159, 9);
-    border: 1px dashed black; */
 }
  /* regole generali sezioni playlist */
 .playlist {
@@ -173,17 +169,18 @@ hr{
         /* DEBUG */
      margin: 10px 0;
 
-     /* height: 500px; */
-     /* background-color: rgb(102, 220, 198);
-     border: 1px dashed black; */
 }
-.recently {
-    /* justify-content: space-between; */
+.playlist i {
+    display: none;
+    font-size: 54px;
+    color: white;
 }
+
 .playlist img {
     max-width: 100%;
     margin: 0 auto;
 }
+
 
 .undertitle{
     font-size: 15px;
@@ -199,19 +196,14 @@ hr{
 /* regole generali riquadri playlist */
 .playlist div {
     width: 15%;
-    /* DEBUG */
-    /* background-color: yellow;
-    border: 1px dashed black;
-    height: 360px; */
+    position: relative;
     margin-right: 1%;
-
-   
 }
 
 /* player/controller */
 
 #player {
-    height: 90px;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     background-color:rgb(40,40,40);
@@ -222,16 +214,10 @@ hr{
     width: 17%;
     display: flex;
     justify-content: space-between;
-  /* DEBUG */
-  /* background-color: rgb(17, 104, 204);
-    border: 1px dashed black; */
 }
 
 .lateral div{
     display: flex;
-    /* DEBUG */
-    /* background-color: rgb(26, 176, 41);
-    border: 1px dashed black; */
 }
 .playersection img {
     max-width: 50%;
@@ -249,23 +235,20 @@ hr{
 .tastieraplayer {
     flex-basis: 38%;
     margin-top: 1%;
-    /* DEBUG */
-    /* background-color: rgb(17, 104, 204);
-    border: 1px dashed black; */
  }
  .tastieraplayer div {
     display: flex;
     align-items: center;
     color: white;
-    /* DEBUG */
-    /* background-color: rgb(23, 181, 39);
-    border: 1px dashed black; */
  }
  #icone-centrali {
     justify-content: center;
-    font-size: 25px;
+    font-size: 23px;
     gap: 2%;
     
+ }
+ .fa-circle-play{
+    font-size: 34px;
  }
  .tastieraplayer :first-child {
     justify-content: space-evenly;
@@ -275,6 +258,27 @@ hr{
     width: 13%;
     justify-content: space-around;
     color: white;
+}
+/* REGOLE HOVER */
+/* hover su immagini playlist */
+.playlist div:hover i{
+    position: absolute;
+    display: block;
+    top: 21%;
+    right: 35%;
+}
+/* hover bianco su contenuti testuali */
+.disappear:hover, #selezioni span:hover, .lateral span:hover, .lateral i:hover {
+    color: white;
+}
+/* hover upgrade */
+.upgrade span:hover {
+    border: 3px solid white;
+    padding: 16px 20px;
+} 
+/* hover tasti centrali player */
+.tastieraplayer .fa-circle-play:hover {
+    font-size: 44px;
 }
 
 /* regole modalità md (878px) */
@@ -325,4 +329,23 @@ hr{
       #selezioni {
          gap: 4%;
         }
+    .disappear {
+        display: none;
+    }
+    .xs-appear {
+        display: block;
+        max-width: 70%;
+        margin: 10% 10%;
+    }
+    .icone-nav , #profileimg {
+        min-width: 60%;
+        margin-left: 16%;
+        margin-top: 8%;
+    }
+    #downloadimg {
+        min-width: 17px;
+        margin-left: 25%;
+        margin-bottom: 8%;
+    }
+      
 }
