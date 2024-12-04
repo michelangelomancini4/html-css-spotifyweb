@@ -214,7 +214,8 @@ hr{
     height: 90px;
     display: flex;
     justify-content: space-between;
-    background-color:#282828
+    background-color:rgb(40,40,40);
+    z-index: 300;
 
 }
 .lateral {
@@ -247,6 +248,7 @@ hr{
 /* regole sezione centrale del player */
 .tastieraplayer {
     flex-basis: 38%;
+    margin-top: 1%;
     /* DEBUG */
     /* background-color: rgb(17, 104, 204);
     border: 1px dashed black; */
@@ -278,7 +280,8 @@ hr{
 /* regole modalità md (878px) */
 
 @media screen and (max-width:878px) {
-    
+
+    /* regole selezioni */
     #selezioni {
         
         margin: 10px auto;
@@ -286,18 +289,27 @@ hr{
         gap: 2%;
         
     }
+    /* regole playlist */
     .playlist div {
-        background-color: red;
         width: 24%;
     }
+    /* regole player */
+    .lateral {
+        width: 28%;
+    }
+    
 }
 /* regole modalità s (639) */
 
 @media screen and (max-width:639px) {
    
     .playlist div {
-        background-color: rgb(66, 224, 18);
         width: 47%;
+    }
+    .personal-icon {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10%;
     }
 }
 
