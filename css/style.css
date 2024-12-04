@@ -6,7 +6,7 @@
 body{
     color: gray;
 }
-h2 , h3{
+h2 , h3 , h4{
     color: white;
     font-weight: bold;
     margin: 2% 0;
@@ -214,19 +214,67 @@ hr{
     height: 90px;
     display: flex;
     justify-content: space-between;
-    /* DEBUG */
-    background-color: rgb(227, 35, 35);
-    border: 1px dashed black;
+    background-color:#282828
+
 }
-#player div {
+.lateral {
     width: 17%;
+    display: flex;
+    justify-content: space-between;
   /* DEBUG */
-  background-color: rgb(17, 104, 204);
-    border: 1px dashed black;
+  /* background-color: rgb(17, 104, 204);
+    border: 1px dashed black; */
 }
+
+.lateral div{
+    display: flex;
+    /* DEBUG */
+    /* background-color: rgb(26, 176, 41);
+    border: 1px dashed black; */
+}
+.playersection img {
+    max-width: 50%;
+    margin: 4% 3%;
+}
+.playersection section {
+    align-self: center;
+}
+
+.playersection i{
+    align-self: center;
+    margin-right: 6px;
+}
+/* regole sezione centrale del player */
 .tastieraplayer {
-   flex-basis: 38%;
+    flex-basis: 38%;
+    /* DEBUG */
+    /* background-color: rgb(17, 104, 204);
+    border: 1px dashed black; */
+ }
+ .tastieraplayer div {
+    display: flex;
+    align-items: center;
+    color: white;
+    /* DEBUG */
+    /* background-color: rgb(23, 181, 39);
+    border: 1px dashed black; */
+ }
+ #icone-centrali {
+    justify-content: center;
+    font-size: 25px;
+    gap: 2%;
+    
+ }
+ .tastieraplayer :first-child {
+    justify-content: space-evenly;
+ }
+ /* regole sezione destra del palyer */
+.destra {
+    width: 13%;
+    justify-content: space-around;
+    color: white;
 }
+
 /* regole modalità md (878px) */
 
 @media screen and (max-width:878px) {
