@@ -177,6 +177,11 @@ hr{
 #player {
     height: 110px;
     display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
     justify-content: space-between;
     background-color:rgb(40,40,40);
     z-index: 300;
