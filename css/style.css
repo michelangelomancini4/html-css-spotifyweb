@@ -25,8 +25,6 @@ h2 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
-    
  }
 .nav-up li:active {
     color: rgb(255, 255, 255);
@@ -60,11 +58,10 @@ nav ul {
     flex-direction: column;
     justify-content: space-between;
     /* flex-grow: 1; */
-    
 }
 nav section{
     margin-left: 6%;
-    margin-bottom: 1%;
+    /* margin-bottom: 1%; */
 }
 hr{
     width: 85%;
@@ -73,9 +70,7 @@ hr{
 .nav-down ul {
     margin-left: 7%;
     /* DA AGGIUNGERE */
-
     /* overflow-y: scroll; */
-
 }
 #playlist-title {
     font-weight: bold;
@@ -95,16 +90,18 @@ hr{
 }
 #profileimg {
         max-width: 30px;
-        margin: -4px 20px;
+        margin: -4px 20px 10px;
         background-color: gray;  
-        border-radius: 50%;  
+        border-radius: 60%;
 }
 .john {
     color: white;
+    vertical-align: top;
+        
 }
 /* macrosezione destra*/
 #wrapper {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 100px);
     display: flex;
   }
 #wrapper main {
@@ -193,15 +190,11 @@ hr{
 }
 /* regole player */
 #player {
-    height: 110px;
+    height: 100px;
     background-color:rgb(40,40,40);
     display: flex;
     justify-content: space-between;
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 500; */
+    
 }
 .lateral {
     width: 17%;
@@ -245,6 +238,7 @@ hr{
  }
  /* regole barra player */
  .section-play{
+   margin-top: 2%;
     justify-content: space-between;
  }
  .container-barra {
@@ -272,6 +266,7 @@ hr{
 .smallbar {
     width: 51%;
     align-self: center;
+    margin-right: 5px;
 }
 /* REGOLE HOVER */
 .nav-up li:hover img{
@@ -301,9 +296,10 @@ hr{
 /* hover player */
 .lateral span:hover {
     text-decoration: underline;
+    
 }
 .tastieraplayer .fa-circle-play:hover {
-    font-size: 44px;
+    font-size: 38px;
 }
 .container-barra:hover  .barra{
     background-color: greenyellow;
@@ -339,6 +335,10 @@ hr{
 /* regole modalità s (639) */
 
 @media screen and (max-width:639px) {
+
+    #selezioni{
+        font-size: 13px;
+    }
    /* regole riquadri playlist */
     .playlist div {
         width: 47%;
@@ -362,17 +362,19 @@ hr{
     /* regole wrapper */
     #wrapper nav {
         width: 50px;}
-     #wrapper main {
+    #wrapper main {
         height: 100%;
          width: calc(100% - 50px);}
-      #selezioni {
+    #selezioni {
          gap: 4%;
+         
         }
-        .playlist div:hover .play-icon {
+   
+    .playlist div:hover .play-icon {
         
-            top: 25%;
-            right: 18%;
-        }
+        top: 25%;
+        right: 18%;
+    }
         /* regole nav */
     .disappear {
         display: none;
@@ -399,5 +401,10 @@ hr{
     .playlist div:hover .fa-circle-play{
         padding: 75%;
     }
-      
+      .lateral img{
+        display: none;
+      }
+      .lateral h4{
+        margin-bottom: 20px;
+      }
 }
