@@ -77,7 +77,10 @@
                     <!-- play metal -->
                     <div>
                          <img src="./img/metal_lifting.jpg" alt="metal" >
-                         <i class="fa-regular fa-circle-play"></i>
+                         <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>
+                         
                         <section>
                             <h3 >Heavy Meta!</h3>
                             <sub >Subtitle</sub>
@@ -86,8 +89,10 @@
                     <!-- play stranger things -->
                     <div>
                         <img src="./img/stranger.jpeg" alt="Stranger Things">
-                        <i class="fa-regular fa-circle-play"></i>
-                        <section>
+                         <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>
+                         <section>
                             <h3 >Stranger Things Vol 1(A netflix Original Soundtrack)</h3>
                             <sub >Kyle Dixon e Micheal Stein</sub>
                         </section>
@@ -95,8 +100,10 @@
                     <!-- a quiet place -->
                     <div>
                         <img src="./img/aquietplace.jpeg" alt="A Quiet Place">
-                        <i class="fa-regular fa-circle-play"></i>
-                        <section>
+                        <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div> 
+                         <section>
                             <h3 >A Quiet Place</h3>
                             <sub >Subtitle</sub>
                         </section>
@@ -104,8 +111,9 @@
                     <!-- split -->
                     <div>
                         <img src="./img/split.jpeg" alt="Split">
-                        <i class="fa-regular fa-circle-play"></i>
-
+                        <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>
                         <section>
                             <h3 >Split</h3>
                             <sub >Subtitle</sub>
@@ -114,8 +122,9 @@
                     <!-- la cura del benessere  -->
                     <div>
                         <img src="./img/cure.jpeg" alt="Cure">
-                        <i class="fa-regular fa-circle-play"></i>
-
+                        <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>
                         <section>
                             <h3 >A Cure for Wellness</h3>
                             <sub >Subtitle</sub>
@@ -124,8 +133,9 @@
                     <!-- sinister -->
                     <div>
                         <img src="./img/sinister.jpeg" alt="sinister">
-                        <i class="fa-regular fa-circle-play"></i>
-
+                        <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>
                         <section>
                             <h3 >Sinister</h3>
                             <sub >Subtitle</sub>
@@ -140,13 +150,15 @@
                 <section class="playlist doe">
                     <div>
                         <img src="./img/radar.jpeg" alt="radar">
-                        <i class="fa-regular fa-circle-play"></i>
-                        <h2>Relaese radar</h2>
+                        <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>                        <h2>Relaese radar</h2>
                     </div>
                     <div>
                         <img src="./img/mixdaily.jpeg" alt="mixdaily">
-                        <i class="fa-regular fa-circle-play"></i>
-                        <h2>Daily mix 1</h2>
+                        <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>                        <h2>Daily mix 1</h2>
                     </div>
                 </section>
                 <!-- sezione artisti più popolari -->
@@ -157,13 +169,16 @@
                 <section class="playlist popolari">
                     <div>
                         <img src="./img/youg.jpeg" alt="lana del ray">
-                        <i class="fa-regular fa-circle-play"></i>
-                        <h2>Lana Del Ray</h2>
+                        <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>                        <h2>Lana Del Ray</h2>
                     </div>
                     <div>
                         <img src="./img/einaudi.jpeg" alt="einaudi">
-                        <i class="fa-regular fa-circle-play"></i>
-                        <h2>Ludovico Einaudi</h2>
+                        <div class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i>
+                         </div>                       
+                          <h2>Ludovico Einaudi</h2>
                     </div>
                 </section>
             </div>
@@ -176,6 +191,7 @@
      <footer id="player">
         <!-- sezione sinistra del player -->
         <div class="playersection lateral">
+            <!-- sezione immagine e testo -->
             <div>
                 <img src="./img/sinister.jpeg" alt="little sinister">
                 <section>
@@ -183,6 +199,7 @@
                     <span>Brano nome</span>
                 </section>
             </div>
+            <!-- icone -->
             <div class="personal-icon">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
@@ -190,6 +207,7 @@
         </div>
         <!-- sezione centrale del player -->
         <div class="playersection tastieraplayer">
+            <!-- icone  -->
             <div id="icone-centrali">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
@@ -197,19 +215,30 @@
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-arrow-rotate-right"></i>
             </div>
-            <div>
+            <!-- barra play -->
+            <div class="section-play">
                 <span><strong>0:25</strong></span>
-                <hr>
+                <div class="container-barra">
+                    <div class="barra">
+                    </div>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
                 <span><strong>4:35</strong></span>
 
             </div>
         </div>
         <!-- sezione destra del player -->
         <div class="playersection lateral destra">
+            <!-- icone -->
             <i class="fa-solid fa-list"></i>
             <i class="fa-solid fa-tv"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <i class="fa-solid fa-minus"></i>
+            <!-- barretta -->
+            <div class="container-barra smallbar">
+                <div class="barra">
+                </div>
+                <i class="fa-solid fa-circle"></i>
+            </div>
         </div>
      </footer>
 </body>

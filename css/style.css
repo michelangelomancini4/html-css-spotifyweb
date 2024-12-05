@@ -162,10 +162,13 @@ hr{
     max-width: 100%;
     margin: 0 auto;
 }
-.playlist i {
+.play-icon {
     display: none;
-    font-size: 54px;
+           
+}
+.play-icon i{
     color: white;
+    font-size: 54px;
 }
 .playlist section{
     text-align: center;
@@ -176,15 +179,14 @@ hr{
 /* regole player */
 #player {
     height: 110px;
+    background-color:rgb(40,40,40);
     display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 500;
-    justify-content: space-between;
-    background-color:rgb(40,40,40);
-    z-index: 300;
 }
 .lateral {
     width: 17%;
@@ -226,22 +228,47 @@ hr{
  .tastieraplayer :first-child {
     justify-content: space-evenly;
  }
+ /* regole barra player */
+ .section-play{
+    justify-content: space-between;
+ }
+ .container-barra {
+    background-color: gray;
+    height: 5px;
+    width: 75%;
+    display: flex;
+ }
+ .barra {
+    height: 5px;
+    width: 25%;
+    background-color: bisque;
+    border-radius: 9999px;
+ }
+ .container-barra i{
+    display: none;
+
+ }
  /* regole sezione destra del palyer */
 .destra {
     width: 13%;
     justify-content: space-around;
     color: white;
 }
+.smallbar {
+    width: 51%;
+    align-self: center;
+}
 /* REGOLE HOVER */
 /* hover su immagini playlist */
-.playlist div:hover i{
+.playlist div:hover .play-icon {
     position: absolute;
     display: block;
-    top: 21%;
-    right: 35%;
-    
+    top: 20%;
+    right: 48%;
 }
-
+.playlist div:hover .playlist div{
+    background-color: rgba(0, 0, 0, 0.6);
+}
 /* hover bianco su contenuti testuali */
 .disappear:hover, #selezioni span:hover, .lateral span:hover, .lateral i:hover {
     color: white;
@@ -251,12 +278,19 @@ hr{
     border: 3px solid white;
     padding: 16px 20px;
 } 
+
 /* hover player */
 .lateral span:hover {
     text-decoration: underline;
 }
 .tastieraplayer .fa-circle-play:hover {
     font-size: 44px;
+}
+.container-barra:hover  .barra{
+    background-color: greenyellow;
+}
+.container-barra:hover  i{
+    display: block;
 }
 /* regole modalità md (878px) */
 @media screen and (max-width:878px) {
@@ -271,6 +305,11 @@ hr{
     .playlist div {
         width: 24%;
     }
+    .playlist div:hover .play-icon {
+        
+        top: 15%;
+        right: 48%;
+    }
     /* regole player */
     .lateral {
         width: 28%;
@@ -282,6 +321,11 @@ hr{
    /* regole riquadri playlist */
     .playlist div {
         width: 47%;
+    }
+    .playlist div:hover .play-icon {
+        
+        top: 20%;
+        right: 18%;
     }
     /* regole player */
     .personal-icon {
@@ -301,6 +345,11 @@ hr{
          width: calc(100% - 50px);}
       #selezioni {
          gap: 4%;
+        }
+        .playlist div:hover .play-icon {
+        
+            top: 25%;
+            right: 18%;
         }
         /* regole nav */
     .disappear {
