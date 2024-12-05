@@ -12,9 +12,8 @@ h2 , h3 , h4{
     font-weight: bold;
     margin: 2% 0;
 }
-h2 {
-}
 /* colonna navigazione sinistra */
+
 /* blocco superiore */
 #wrapper nav {
     width: 250px;
@@ -57,7 +56,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 nav section{
     margin-left: 6%;
@@ -68,8 +66,9 @@ hr{
 }
 .nav-down ul {
     margin-left: 7%;
-    /* DA AGGIUNGERE */
-    /* overflow-y: scroll; */
+     /* DA AGGIUNGERE */
+    /* overflow-y: scroll;
+    overflow-y: hidden; */
 }
 #playlist-title {
     font-weight: bold;
@@ -88,10 +87,6 @@ hr{
  right: calc(100vw - 250px);
  bottom: 100px;
 }
-/* .nav-down ul {
-    overflow-y: scroll;
-   
-} */
 
 #downloadimg {
     max-width: 23px;
@@ -279,7 +274,9 @@ hr{
     align-self: center;
     margin-right: 5px;
 }
+
 /* REGOLE HOVER */
+
 .nav-up li:hover img{
    opacity: 1;
 }
@@ -379,19 +376,14 @@ hr{
          width: calc(100% - 50px);}
     #selezioni {
          gap: 4%;
-         
         }
-   
     .playlist div:hover .play-icon {
-        
         top: 25%;
         right: 18%;
     }
         /* regole nav */
         .nav-down section{
-           
             position: relative;
-            
            }
     .disappear {
         display: none;
@@ -432,5 +424,12 @@ hr{
       #icone-centrali {
         font-size: 13px;
       }
-      
+     
 }
+@media screen and (max-height:652px){
+    .nav-down ul {
+        margin-left: 7%;
+        /* DA AGGIUNGERE */
+        /* overflow-y: scroll; */
+    }
+  }
