@@ -88,6 +88,11 @@ hr{
  right: calc(100vw - 250px);
  bottom: 100px;
 }
+/* .nav-down ul {
+    overflow-y: scroll;
+   
+} */
+
 #downloadimg {
     max-width: 23px;
     padding-top: 5px;
@@ -344,6 +349,7 @@ hr{
 
     #selezioni{
         font-size: 13px;
+        gap: 6%;
     }
    /* regole riquadri playlist */
     .playlist div {
@@ -382,6 +388,11 @@ hr{
         right: 18%;
     }
         /* regole nav */
+        .nav-down section{
+           
+            position: relative;
+            
+           }
     .disappear {
         display: none;
     }
@@ -395,11 +406,15 @@ hr{
         margin-left: 16%;
         margin-top: 8%;
     }
+    .nav-down section {
+        margin-bottom: -90px;
+    }
     #downloadimg {
         min-width: 17px;
         margin-left: 25%;
-        margin-bottom: 8%;
+        margin-bottom: 5px;
     }
+    
     /* regole playlist */
     .playlist div:hover .play-icon {
         top: 0;
@@ -413,4 +428,9 @@ hr{
       .lateral h4{
         margin-bottom: 20px;
       }
+      /* regole player */
+      #icone-centrali {
+        font-size: 13px;
+      }
+      
 }
