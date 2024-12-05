@@ -82,9 +82,15 @@ hr{
 /* regole footer del nav */
 .nav-down section{
  margin-left: 0;
+ background-color: black;
+ position: fixed;
+ left: 0;
+ right: calc(100vw - 250px);
+ bottom: 100px;
 }
 #downloadimg {
     max-width: 23px;
+    padding-top: 5px;
     margin: -6px 20px;
 }
 #profileimg {
