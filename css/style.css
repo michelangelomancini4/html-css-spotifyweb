@@ -24,6 +24,9 @@ h2 {
  nav {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
+    
  }
 .nav-up li:active {
     color: rgb(255, 255, 255);
@@ -47,18 +50,21 @@ nav ul {
     max-width: 30px;
     margin: 1px 20px;
     vertical-align: middle;
+    opacity: 0.5;
 }
 /* nav blocco inferiore */
 /* regole generali */
 .nav-down{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    
 }
 nav section{
     margin-left: 6%;
-    margin-bottom: 4%;
+    margin-bottom: 1%;
 }
 hr{
     width: 85%;
@@ -66,6 +72,10 @@ hr{
 }
 .nav-down ul {
     margin-left: 7%;
+    /* DA AGGIUNGERE */
+
+    /* overflow-y: scroll; */
+
 }
 #playlist-title {
     font-weight: bold;
@@ -73,7 +83,7 @@ hr{
 }
 .fa-square-plus {
     font-size: 35px;
-    margin-right: 2px;
+    margin-right: 3%;
 }
 /* regole footer del nav */
 .nav-down section{
@@ -187,11 +197,11 @@ hr{
     background-color:rgb(40,40,40);
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 500;
+    z-index: 500; */
 }
 .lateral {
     width: 17%;
@@ -264,6 +274,9 @@ hr{
     align-self: center;
 }
 /* REGOLE HOVER */
+.nav-up li:hover img{
+   opacity: 1;
+}
 /* hover su immagini playlist */
 .playlist div:hover .play-icon {
     position: absolute;
